@@ -48,9 +48,12 @@ export function Carrito() {
   return (
     <div>
       <h1 className='header'>Carrito de Compras</h1>
+      <div className='button-container'>
       <Link to="/catalogo">
-        <button className="btn btn-primary">Volver a la lista</button>
+        <button className="btn btn-primary .button-container">Volver a la lista</button>
       </Link>
+
+      </div>
       <ul>
         {carrito.map((product) => (
           <Card key={product.id} product={product} esCarrito={true} eliminarDelCarrito={eliminarDelCarrito} />
@@ -58,8 +61,10 @@ export function Carrito() {
       </ul>
 
       <h2>Total a pagar= ${total.toFixed(2)}</h2>
+<div className='button-container'>
+      <button   onClick={Finalizar}>Finalizar Compra</button>
 
-      <button onClick={Finalizar}>Finalizar Compra</button>
+</div>
     </div>
   );
 }

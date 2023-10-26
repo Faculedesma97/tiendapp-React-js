@@ -30,12 +30,12 @@ export const CatalogoApi = () => {
   return (
     <div >
       <h1 className='header'>Lista de Productos</h1>
-      <div className='busqueda-prod'>
+      <div className='button-container'>
         
       <Link to="/carrito">
         <button className="btn btn-primary">Ir al Carrito</button>
       </Link>
-      <select onChange={handleCategoriaChange} value={categoriaSeleccionada}>
+      <select className='btn-select' onChange={handleCategoriaChange} value={categoriaSeleccionada}>
                 <option value="">Categoria</option>
                 <option value="men's clothing">Ropa de Hombre</option>
                 <option value="jewelery">Joyeria</option>
