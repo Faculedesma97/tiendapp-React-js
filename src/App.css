@@ -1,0 +1,39 @@
+.custom-card {
+  border: 1px solid #ccc;
+  /* Agregar borde a la tarjeta */
+  height: 100%;
+  /* Asegurar que todas las tarjetas tengan la misma altura */
+  width: 100%;
+}
+
+.card-image-top {
+  object-fit: cover;
+  /* Ajustar la imagen al tamaño de la tarjeta */
+  height: 100px;
+  /* Definir la altura deseada para la imagen */
+  width: 100%;
+  /* Asegurar que la imagen se ajuste al ancho de la tarjeta */
+}
+
+.custom_card{
+  width: 100%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.card-title, .card-text {
+  font-size: 14px; /* Tamaño de fuente deseado */
+  line-height: 1.2; /* Espaciado entre líneas deseado */
+}
+
+.row{
+  background-color: black;
+  height: 80%;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
